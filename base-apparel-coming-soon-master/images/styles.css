@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-image: url(images/bg-pattern-desktop.svg);
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+.row, .box2{
+    padding: 0;
+    margin: 0;
+}
+
+.box2{
+    text-align: right;
+}
+
+.box1{
+padding: 4% 10%;
+}  
+.visible-mobile{
+    display: none;
+}
+
+h1{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+}
+h1>span{
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+.heading-box{
+    margin-top: 25%;
+}
+
+.para1{
+    color: hsl(0, 36%, 70%);
+    margin-top: 5%;
+    line-height: 1.5rem;
+}
+.container{
+    position: relative;
+    padding: 0;
+  }
+  
+.email-input {
+    width: 100%;
+    margin-top: 10%;
+    border: 2px solid hsl(0, 36%, 70%);
+    color: hsl(0, 36%, 70%);
+    height: 3.5rem;
+    border-radius: 30px;
+    padding-left: 7%;
+}
+
+.btn{
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 4% 11%;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 1px 5px 15px hsl(0deg 36% 70%);
+}
+.btn:hover{
+    background-image: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 36%, 70%));
+  }
+  
+  .email-input:focus{
+    color: black;
+    outline: none;
+    outline-offset: 0px;
+  }
+  .email-input{
+    color: hsl(0, 36%, 70%);
+  }
+  
+  .email-input::placeholder{
+    color: hsl(0, 36%, 70%);
+  }
+  
+  .email-input:invalid:focus{
+    border: 2px solid red;
+  }
+  
+  .email-input:valid{
+      border: 2px solid green;
+  }
+  
+  .email-input{
+    width: 100%;
+    margin-top: 10%;
+    border: 2px solid hsl(0, 36%, 70%);
+    color: hsl(0, 36%, 70%);
+    height: 3.5rem;
+    border-radius: 30px;
+    padding-left: 7%;
+  }
+
+  
+  .attribution{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .validateIcons{
+    position: absolute;
+    left: 72%;
+    top: 55%;
+  }
+  
+  .visibility-mobile{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  
+  .attribution a{
+    color: hsl(228, 45%, 44%);
+  }
+  
+  @media screen and (max-width: 991px){
+    
+    .box1{
+        padding:0% 0% 4% 0%;
+    }
+    .logo{
+        padding: 3%;
+    }
+     .visible-mobile{
+         display: block;
+         width: 100%;
+     }
+
+     .visible-desktop{
+         display: none;
+     }
+
+     .heading-box{
+         text-align: center;
+     }
+
+     .para1{
+         padding: 0% 10%;
+     }
+
+     .validateIcons{
+         left: 72%;
+         top: 66%;
+     }
+
+     .btn{
+         top:45%;
+         left:80%;
+         padding: 3% 10%;
+     }
+  }
+  @media screen and (max-width: 800px)
+{
+  .box1{
+    padding: 0;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 5%;
+    margin-top: 15%;
+  }
+
+  .para1{
+    text-align: center;
+    padding: 0 10%;
+  }
+
+  .logo{
+    margin: 10% 5% 10% 7%;
+  }
+
+  .container{
+      text-align: center;
+  }
+  
+  .email-input{
+    width: 90%;
+    margin: 5%;
+  }
+ .validateIcons{
+       top: 38%;
+       left:68%;
+   }
+
+  .btn{
+    position: absolute;
+    left: 75%;
+    top: 18%;
+    padding: 3% 9%;
+  }
+
+  .visible-mobile{
+      display: block;
+      width: 100%;
+  }
+
+  .visible-desktop{
+    display: none;
+    
+  }
+}
+
+@media screen and (max-width:450px) {
+    .container{
+        text-align: center;
+    }
+    .email-input{
+        width: 70%;
+    }
+    .btn{
+     left:67%;
+    }
+}
+
+@media screen and (max-width:280px) {
+    h1{
+        font-size: 1.5rem;
+        padding-left: 12px;
+    }
+}
